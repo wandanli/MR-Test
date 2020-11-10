@@ -76,11 +76,11 @@ onAddToCart = () => {
     if (displayErrorMessage() == false) {
         addToCart();
         calculateTotal();
-        displayMiniCartItems();
+        addMiniCartItemsContent();
     }
 }
 
-displayMiniCartItems = () => {
+addMiniCartItemsContent = () => {
     var miniCartItemDisplay = ""
     for (var i = 0; i < mCurrentCartItemOrder.length; i++) {
         var size = mCurrentCartItemOrder[i];
@@ -89,5 +89,16 @@ displayMiniCartItems = () => {
 
     }
     document.getElementById("mini-cart").innerHTML = miniCartItemDisplay;
+
+}
+
+onDisplayMiniCart = () => {
+    var is_visibility = document.getElementById("mini-cart").style.visibility
+    if (is_visibility == "hidden") {
+        document.getElementById("mini-cart").style.visibility = "visible";
+    }
+    else {
+        document.getElementById("mini-cart").style.visibility = "hidden";
+    }
 
 }
