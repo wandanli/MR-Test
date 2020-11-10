@@ -4,32 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="test.css">
     <title>MR Test</title>
 </head>
 
 <body>
     <header>
-        <p>My Cart (4)</p>
+        <p class="container" id="cart">My Cart (4)</p>
     </header>
-    <main>
-        <img src="./image/classic-tee.jpg" alt="classic-tee">
+    <main class="container flex-box">
+        <img id="item-img" src="./image/classic-tee.jpg" alt="classic-tee">
         <div>
-            <h6>Classic Tee</h6>
-            <hr>
-            <p>$75.00</p>
-            <hr>
-            <p>
+            <h6 id="item-name">Classic Tee</h6>
+
+            <p id="item-price">$75.00</p>
+
+            <p id="item-description">
                 Dolor sit amet, consectetur adipisciong elit. Haec et tu ita posuisti, et verba vestra sunt. Quod autem
                 ratione actum est, id officium appellamus dolor sit amet, consectetur adipiscing elit. Haec et tu ita
                 posuisti, et verba vestra sunt. Quod autem ratione actum est, id officium appellamus
             </p>
-            <p>SIZE<span>*</span></p>
-            <div>
-                <button>S</button>
-                <button>M</button>
-                <button>L</button>
+            <p id="selected-size">SIZE<span>*</span></p>
+            <div id="size-option">
+                <button class="size-button">S</button>
+                <button class="size-button">M</button>
+                <button class="size-button">L</button>
             </div>
-            <button>ADD TO CART</button>
+            <button id="add-item">ADD TO CART</button>
 
         </div>
     </main>
