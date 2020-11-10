@@ -77,7 +77,18 @@ header {
     cursor: pointer;
 }
 
-.size-button:focus {
+.selected-size-button {
+    width: 40px;
+    margin: 0 4px 20px 0;
+    padding: 10px;
+    background-color: white;
+    border: #222222 2px solid;
+    font-weight: lighter;
+    color: #888888;
+    cursor: pointer;
+}
+
+.size-button:focus, .selected-size-button:focus {
     border: #222222 2px solid;
     outline: #222222;
 }
