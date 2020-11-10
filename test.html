@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <p class="container" id="cart">My Cart (4)</p>
+        <p class="container" id="cart">My Cart (<span id="cart-quantity">0</span>)</p>
     </header>
     <main class="container flex-box">
         <img id="item-img" src="./image/classic-tee.jpg" alt="classic-tee">
@@ -32,7 +32,8 @@
                 <button class="size-button" onclick="onSelectSize(this)">M</button>
                 <button class="size-button" onclick="onSelectSize(this)">L</button>
             </div>
-            <button id="add-item">ADD TO CART</button>
+            <button id="add-item" onclick="onAddToCart()">ADD TO CART</button>
+            <p id="error-message" class="error-message"></p>
 
         </div>
     </main>

@@ -14,7 +14,7 @@ header {
     text-align: right;
 }
 
-#cart {
+#cart, #cart-quantity{
     color: #888888;
     font-weight: lighter;
 }
@@ -110,4 +110,9 @@ header {
 
 #add-item:focus {
     outline: #222222;
+}
+
+.error-message {
+    margin-top: 10px;
+    color: #C90000;
 }
