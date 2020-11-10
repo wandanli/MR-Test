@@ -53,13 +53,17 @@ header {
     line-height: 22px;
 }
 
-#selected-size {
+#size-display {
     margin-bottom: 10px;
     color: #888888;
 }
 
-#selected-size > span {
+#size-display > span {
     color: #C90000;
+}
+
+#selected-size {
+    color: #222222 !important;
 }
 
 .size-button {
@@ -90,4 +94,9 @@ header {
 #add-item:hover {
     background-color:#222222;
     color: white;
+    transition: 0.2s;
+}
+
+#add-item:focus {
+    outline: #222222;
 }

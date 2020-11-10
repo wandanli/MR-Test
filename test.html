@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link rel="stylesheet" href="test.css">
+    <script src="test.js"></script>
     <title>MR Test</title>
 </head>
 
@@ -25,11 +26,11 @@
                 ratione actum est, id officium appellamus dolor sit amet, consectetur adipiscing elit. Haec et tu ita
                 posuisti, et verba vestra sunt. Quod autem ratione actum est, id officium appellamus
             </p>
-            <p id="selected-size">SIZE<span>*</span></p>
+            <p id="size-display">SIZE<span>*</span> <span id="selected-size"></span></p>
             <div id="size-option">
-                <button class="size-button">S</button>
-                <button class="size-button">M</button>
-                <button class="size-button">L</button>
+                <button class="size-button" onclick="onSelectSize(this)">S</button>
+                <button class="size-button" onclick="onSelectSize(this)">M</button>
+                <button class="size-button" onclick="onSelectSize(this)">L</button>
             </div>
             <button id="add-item">ADD TO CART</button>
 
