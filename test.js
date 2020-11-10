@@ -79,7 +79,7 @@ onAddToCart = () => {
 }
 
 displayMiniCartItems = () => {
-    var total = 0;
+
     for (var i = 0; i < mCurrentCartItemOrder.length; i++) {
         var size = mCurrentCartItemOrder[i];
         var item = mCurrentCartItems.get(size);
