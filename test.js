@@ -1,3 +1,5 @@
+
+
 removeSelectedClass = () => {
     var sizeButtons = document.getElementsByClassName("size-button");
     for (var i = 0; i < sizeButtons.length; i++) {
@@ -79,11 +81,13 @@ onAddToCart = () => {
 }
 
 displayMiniCartItems = () => {
-
+    var miniCartItemDisplay = ""
     for (var i = 0; i < mCurrentCartItemOrder.length; i++) {
         var size = mCurrentCartItemOrder[i];
         var item = mCurrentCartItems.get(size);
-        miniCartItemDisplay += "<div class=\"cart - item - card\">< img src = \"./image/classic-tee.jpg\" alt = \"classic-tee\" ><div class=\"cart-item-card-content\"><p>" + item.name + "</p><p>" + item.quantity + " X <b>" + item.price + "</b></p><p>Size: " + item.size + "</p></div></div >"
+        miniCartItemDisplay += "<div class=\"cart-item-card\">" + "<img src = \"./image/classic-tee.jpg\" alt = \"classic-tee\">" + "<div class=\"cart-item-card-content\"><p>" + item.name + "</p><p>" + item.quantity + " X <b>" + item.price + "</b></p><p>Size: " + item.size + "</p></div></div >";
+
     }
-    document.getElementById("mini-cart-container").innerHTML = miniCartItemDisplay;
+    document.getElementById("mini-cart").innerHTML = miniCartItemDisplay;
+
 }

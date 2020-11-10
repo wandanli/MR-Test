@@ -129,11 +129,11 @@ header {
 /* mini cart section */
 
 #cart:hover ~ .mini-cart-container{
-    display: block;
+    visibility: visible;
 }
 
 .mini-cart-container {
-    display: none;
+    visibility: hidden;
     position: absolute;
     top: 34px;
     right: 10%;
