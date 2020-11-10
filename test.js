@@ -21,10 +21,6 @@ onSelectSize = (sizeButton) => {
         document.getElementById("error-message").innerHTML = "";
     }
 
-
-
-
-
 }
 
 class CartItem {
@@ -78,5 +74,16 @@ onAddToCart = () => {
     if (displayErrorMessage() == false) {
         addToCart();
         calculateTotal();
+        displayMiniCartItems();
     }
+}
+
+displayMiniCartItems = () => {
+    var total = 0;
+    for (var i = 0; i < mCurrentCartItemOrder.length; i++) {
+        var size = mCurrentCartItemOrder[i];
+        var item = mCurrentCartItems.get(size);
+        miniCartItemDisplay += "<div class=\"cart - item - card\">< img src = \"./image/classic-tee.jpg\" alt = \"classic-tee\" ><div class=\"cart-item-card-content\"><p>" + item.name + "</p><p>" + item.quantity + " X <b>" + item.price + "</b></p><p>Size: " + item.size + "</p></div></div >"
+    }
+    document.getElementById("mini-cart-container").innerHTML = miniCartItemDisplay;
 }
