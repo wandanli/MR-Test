@@ -88,9 +88,13 @@ header {
     cursor: pointer;
 }
 
-.size-button:focus, .selected-size-button:focus {
+.size-button:focus {
+    outline: none;
+}
+
+.selected-size-button:focus {
     border: #222222 2px solid;
-    outline: #222222;
+    outline: none;
 }
 
 #add-item {
