@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="test.css">
     <script src="test.js"></script>
     <title>MR Test</title>
@@ -12,11 +13,14 @@
 
 <body>
     <header>
-        <p class="container" id="cart">My Cart (<span id="cart-quantity">0</span>)</p>
+        <p class="container" id="cart"><i class="material-icons" id="icon-shopping-cart">add_shopping_cart</i>
+            <span id="my-cart">My Cart</span>
+            (<span id="cart-quantity">0</span>)
+        </p>
     </header>
     <main class="container flex-box">
         <img id="item-img" src="./image/classic-tee.jpg" alt="classic-tee">
-        <div>
+        <div class="item-content">
             <h6 id="item-name">Classic Tee</h6>
 
             <p id="item-price">$75.00</p>
