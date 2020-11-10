@@ -8,6 +8,7 @@
 }
 
 header {
+    position: relative;
     margin: 20px 0 40px 0;
     padding: 10px 0;
     background-color: #F6F6F7;
@@ -123,6 +124,37 @@ header {
 .error-message {
     margin-top: 10px;
     color: #C90000;
+}
+
+/* mini cart section */
+
+#cart:hover ~ .mini-cart-container{
+    display: block;
+}
+
+.mini-cart-container {
+    display: none;
+    position: absolute;
+    top: 34px;
+    right: 10%;
+    background-color: white;
+    border: #888888 1px solid;
+}
+
+.cart-item-card {
+    display: flex;
+    margin: 20px 100px 20px 20px;
+    text-align: left;
+}
+
+.cart-item-card > img {
+    width: 80px;
+    height: auto;
+}
+
+.cart-item-card-content {
+    margin-left: 20px;
+    line-height: 26px;
 }
 
 @media only screen and (max-width: 992px) {
