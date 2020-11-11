@@ -217,8 +217,8 @@ display: none;
 }
 
 .cart-item-card > img {
-    width: 50%;
-    height: auto;
+    width: 80px;
+    height: 120px;
 }
 
 .cart-item-card-content {
