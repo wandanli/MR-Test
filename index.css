@@ -219,6 +219,7 @@ display: none;
 .cart-item-card > img {
     width: 80px;
     height: 120px;
+    aspect-ratio: attr(width) / attr(height);
 }
 
 .cart-item-card-content {
