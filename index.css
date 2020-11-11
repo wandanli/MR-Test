@@ -185,18 +185,45 @@ display: none;
 #item-img {
     width: 100%;
     height: auto;
-    margin: 0 20px;
+    margin: 0 auto;
 }
 .flex-box {
     display: block;
 }
 
 .item-content {
-    margin: 20px;
+    margin: 20px auto;
 }
 
 #item-price {
     border-top: none;
     border-bottom: none;
 }
+
+/* mini cart section */
+.mini-cart-container {
+    visibility: hidden;
+    position: absolute;
+    top: 44px;
+    width: 80%;
+    background-color: white;
+    border: #888888 1px solid;
+}
+
+.cart-item-card {
+    display: flex;
+    margin: 20px;
+    text-align: left;
+}
+
+.cart-item-card > img {
+    width: 80px;
+    height: auto;
+}
+
+.cart-item-card-content {
+    margin-left: 20px;
+    line-height: 26px;
+}
+
 }
